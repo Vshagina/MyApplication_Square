@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="1039.0" style="-fx-background-color: #a0a6a8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminWindowController">
+    <children>
+        <AnchorPane prefHeight="565.0" prefWidth="146.0" style="-fx-background-color: #655C53;">
+            <children>
+                <ImageView fx:id="image" fitHeight="107.0" fitWidth="107.0" layoutX="36.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../image/acc.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="account" layoutX="3.0" layoutY="259.0" text="    Account&#10;administrator&#10;&#10;" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="19.0" />
+                    </font>
+                </Label>
+                <Button fx:id="exit" layoutX="23.0" layoutY="520.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="97.0" style="-fx-background-color: transparent6;" text="Главная" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+      <TabPane layoutX="146.0" prefHeight="566.0" prefWidth="892.0" style="-fx-background-color: #DFDEE0;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="object" text="Объекты недвижимости">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #DFDEE0;">
+                     <children>
+                        <Button fx:id="gen_ob" layoutX="40.0" layoutY="110.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="225.0" style="-fx-background-color: #7a7976;" text="Вся недвижимость" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="19.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="table_object" layoutX="99.0" layoutY="162.0" prefHeight="361.0" prefWidth="694.0">
+                          <columns>
+                              <TableColumn fx:id="number" prefWidth="32.79995805025101" text="№" />
+                              <TableColumn fx:id="type_posting" minWidth="0.0" prefWidth="120.0" text="Тип объявления" />
+                              <TableColumn fx:id="price" minWidth="0.0" prefWidth="77.5999755859375" text="Цена" />
+                              <TableColumn fx:id="address" minWidth="0.0" prefWidth="136.8000030517578" text="Местоположение" />
+                              <TableColumn fx:id="square" prefWidth="92.79998779296875" text="Площадь" />
+                              <TableColumn fx:id="Type_object" minWidth="0.0" prefWidth="120.0" text="Тип объекта" />
+                              <TableColumn fx:id="number_rooms" prefWidth="111.1998291015625" text="Кол-во комнат" />
+                          </columns>
+                        </TableView>
+                        <ComboBox fx:id="type_object1" editable="true" layoutX="335.0" layoutY="117.0" prefWidth="150.0" promptText="Тип объекта" />
+                        <Button fx:id="viewing_object" layoutX="675.0" layoutY="112.0" mnemonicParsing="false" style="-fx-background-color: #7a7976;" text="Просмотр" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="19.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="type_po1" editable="true" layoutX="498.0" layoutY="117.0" prefWidth="150.0" promptText="Сортировать по" />
+                        <Label layoutX="295.0" layoutY="36.0" text="Объекты недвижимости" textFill="#655c53">
+                           <font>
+                              <Font name="Arial Black" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="realtor" text="Команда риэторов">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="719.0">
+                     <children>
+                        <TableView fx:id="table_realtors" layoutX="5.0" layoutY="193.0" prefHeight="330.0" prefWidth="881.0">
+                          <columns>
+                              <TableColumn fx:id="number2" prefWidth="25.599974811077118" text="№" />
+                              <TableColumn fx:id="name_real" prefWidth="75.19998550415039" text="Имя" />
+                              <TableColumn fx:id="surname_real" minWidth="0.0" prefWidth="86.39996337890625" text="Фамилия" />
+                              <TableColumn fx:id="age_real" minWidth="0.0" prefWidth="52.0" text="Возраст" />
+                              <TableColumn fx:id="address_real" minWidth="0.0" prefWidth="135.1999969482422" text="Адрес" />
+                              <TableColumn fx:id="phone_real" prefWidth="97.5999755859375" text="Телефон" />
+                              <TableColumn fx:id="email_real" prefWidth="143.20001220703125" text="Электронная почта" />
+                              <TableColumn fx:id="login_real" prefWidth="82.4000244140625" text="Логин" />
+                              <TableColumn fx:id="password_real" prefWidth="124.800048828125" text="Пароль" />
+                              <TableColumn fx:id="gender_real" prefWidth="60.0" text="Пол" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="viewing_realtor" layoutX="382.0" layoutY="134.0" mnemonicParsing="false" style="-fx-background-color: #7a7976;" text="Просмотр" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="19.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="323.0" layoutY="36.0" text="Команда риэлторов" textFill="#655c53">
+                           <font>
+                              <Font name="Arial Black" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="clients" text="Клиенты">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_clients" layoutX="5.0" layoutY="193.0" prefHeight="330.0" prefWidth="881.0">
+                          <columns>
+                              <TableColumn prefWidth="25.599974811077118" text="№" />
+                              <TableColumn prefWidth="75.19998550415039" text="Имя" />
+                              <TableColumn minWidth="0.0" prefWidth="86.39996337890625" text="Фамилия" />
+                              <TableColumn minWidth="0.0" prefWidth="52.0" text="Возраст" />
+                              <TableColumn minWidth="0.0" prefWidth="135.1999969482422" text="Адрес" />
+                              <TableColumn prefWidth="97.5999755859375" text="Телефон" />
+                              <TableColumn prefWidth="143.20001220703125" text="Электронная почта" />
+                              <TableColumn prefWidth="82.4000244140625" text="Логин" />
+                              <TableColumn prefWidth="124.800048828125" text="Пароль" />
+                              <TableColumn prefWidth="60.0" text="Пол" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="viewing_clients" layoutX="382.0" layoutY="122.0" mnemonicParsing="false" style="-fx-background-color: #7a7976;" text="Просмотр" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="19.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="391.0" layoutY="40.0" text="Клиенты" textFill="#655c53">
+                           <font>
+                              <Font name="Arial Black" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="reports" text="Отчёты">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table_reports" layoutX="5.0" layoutY="193.0" prefHeight="334.0" prefWidth="882.0">
+                          <columns>
+                            <TableColumn prefWidth="27.20001220703125" text="№" />
+                              <TableColumn prefWidth="75.0" text="Дата отчёта" />
+                              <TableColumn minWidth="7.199951171875" prefWidth="94.39996337890625" text="Дата продажи" />
+                              <TableColumn prefWidth="116.0" text="Тип объекта" />
+                              <TableColumn prefWidth="77.5999755859375" text="Цена" />
+                              <TableColumn prefWidth="92.0" text="Адрес" />
+                              <TableColumn prefWidth="64.0" text="Площадь" />
+                              <TableColumn prefWidth="104.79998779296875" text="Кол-во комнат" />
+                              <TableColumn prefWidth="111.20001220703125" text="Состояние" />
+                              <TableColumn prefWidth="117.59995117187498" text="Риэлтор" />
+                          </columns>
+                        </TableView>
+                        <ComboBox fx:id="type_object" editable="true" layoutX="380.0" layoutY="132.0" prefWidth="150.0" promptText="Тип объекта" />
+                        <Button fx:id="viewing_reports" layoutX="713.0" layoutY="127.0" mnemonicParsing="false" style="-fx-background-color: #7a7976;" text="Просмотр" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="19.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="type_po" editable="true" layoutX="547.0" layoutY="132.0" prefWidth="150.0" promptText="Сортировать по" />
+                        <Button fx:id="viewing_general" layoutX="95.0" layoutY="127.0" mnemonicParsing="false" style="-fx-background-color: #7a7976;" text="Все отчёты" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="19.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="410.0" layoutY="48.0" text="Отчёты" textFill="#655c53">
+                           <font>
+                              <Font name="Arial Black" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>

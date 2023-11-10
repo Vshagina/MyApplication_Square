@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="617.0" style="-fx-background-color: #008080;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RealtorRegistrationController">
+    <children>
+        <AnchorPane layoutX="7.0" layoutY="30.0" prefHeight="507.0" prefWidth="601.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Label layoutX="151.0" layoutY="14.0" text="Регистрация риэлтора" textFill="#a69565">
+                    <font>
+                        <Font name="Arial Black" size="23.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="name_id" layoutX="213.0" layoutY="46.0" promptText="Имя" />
+                <TextField fx:id="surname_id" layoutX="213.0" layoutY="83.0" promptText="Фамилия" />
+                <TextField fx:id="age_id" layoutX="213.0" layoutY="120.0" promptText="Возраст" />
+                <TextField fx:id="phone_id" layoutX="213.0" layoutY="195.0" promptText="Телефон" />
+                <TextField fx:id="address_id" layoutX="213.0" layoutY="157.0" promptText="Адрес" />
+                <TextField fx:id="login1_id" layoutX="213.0" layoutY="273.0" promptText="Логин" />
+                <TextField fx:id="email_id" layoutX="213.0" layoutY="234.0" promptText="Электронная почта" />
+                <TextField fx:id="password1_id" layoutX="214.0" layoutY="311.0" promptText="Пароль" />
+                <Button fx:id="registration_id" layoutX="213.0" layoutY="467.0" mnemonicParsing="false" style="-fx-background-color: #a69565;" text="Зарегистрироваться" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="12.0" />
+                    </font>
+                </Button>
+                <Label layoutX="275.0" layoutY="348.0" text="Пол:" />
+                <ComboBox fx:id="genderComboBox" layoutX="215.0" layoutY="366.0" prefWidth="150.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

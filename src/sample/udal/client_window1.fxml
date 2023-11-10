@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClientWindowController">
+   <children>
+      <AnchorPane layoutX="130.0" prefHeight="511.0" prefWidth="522.0" />
+      <AnchorPane prefHeight="511.0" prefWidth="131.0" style="-fx-background-color: #69808f;">
+         <children>
+            <ImageView fx:id="image" fitHeight="138.0" fitWidth="95.0" layoutX="16.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/Remove-bg.ai_1698952359281.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="us_ci" layoutX="24.0" layoutY="83.0" text="CLIENT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="selection_realty" layoutX="4.0" layoutY="157.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" style="-fx-background-color: #446468;" text="      Подбор &#10;недвижимости" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="arrange_deal" layoutX="20.0" layoutY="219.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="92.0" style="-fx-background-color: #446468;" text="Оформить &#10;   сделку&#10;" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" layoutX="32.0" layoutY="470.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="68.0" style="-fx-background-color: #446468;" text="Выход" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="selection_realty_window" layoutX="131.0" prefHeight="511.0" prefWidth="522.0" style="-fx-background-color: #a0a6a8;">
+         <children>
+            <Label fx:id="type_name" layoutX="48.0" layoutY="50.0" text="Тип объявления">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="51.0" layoutY="326.0" text="Тип объекта">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="204.0" text="Местоположение">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="256.0" text="Площадь">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="391.0" text="Кол-во комнат">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="do_square" layoutX="118.0" layoutY="285.0" prefHeight="2.0" prefWidth="28.0" />
+            <TextField fx:id="ot_square" layoutX="47.0" layoutY="283.0" prefHeight="26.0" prefWidth="28.0" />
+            <Label layoutX="33.0" layoutY="289.0" text="от" />
+            <Label layoutX="101.0" layoutY="289.0" text="до" />
+            <Label layoutX="148.0" layoutY="289.0" text="м^2" />
+            <Button fx:id="find" layoutX="72.0" layoutY="459.0" mnemonicParsing="false" style="-fx-background-color: #446468;" text="Найти" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="price_name" layoutX="81.0" layoutY="111.0" text="Цена">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="130.0" text="от" />
+            <Label layoutX="32.0" layoutY="161.0" text="до" />
+            <Label layoutX="150.0" layoutY="170.0" text="руб" />
+            <TextField fx:id="do_price" layoutX="47.0" layoutY="166.0" prefHeight="26.0" prefWidth="92.0" />
+            <TextField fx:id="ot_price" layoutX="47.0" layoutY="134.0" prefHeight="26.0" prefWidth="92.0" />
+            <ComboBox fx:id="Type_ad" layoutX="33.0" layoutY="78.0" prefWidth="150.0" />
+            <ComboBox fx:id="address" layoutX="29.0" layoutY="224.0" prefWidth="150.0" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="224.0" />
+            <Label layoutX="150.0" layoutY="139.0" text="руб" />
+            <ComboBox fx:id="type_object" layoutX="29.0" layoutY="349.0" prefWidth="150.0" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="349.0" />
+            <ComboBox fx:id="quantity_rooms" layoutX="29.0" layoutY="414.0" prefWidth="150.0" AnchorPane.leftAnchor="29.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
